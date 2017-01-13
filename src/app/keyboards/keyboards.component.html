@@ -1,0 +1,23 @@
+<h2>My Heroes</h2>
+
+<div>
+  <label>Keyboard name:</label> <input #keyName />
+  <button (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let key of keys" (click)="onSelect(key)" [class.selected]="key === selectedKeyboard">
+    <span class="badge">{{key.id}}</span>
+    <span>{{key.name}}</span>
+    <button class="delete" (click)="delete(key); $event.stopPropagation()">x</button>
+  </li>
+</ul>
+
+<div *ngIf="selectedKeyboard">
+  <h2>
+    {{selectedKeyboard.name | uppercase}} is my key
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>

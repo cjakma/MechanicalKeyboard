@@ -1,0 +1,54 @@
+<!--
+<div class="section group" *ngFor="let key of keys" >
+  <div class="col_1_of_3 span_1_of_3" >
+ 	<a [routerLink]="['/detail', key.id]">
+     <div class="inner_content clearfix">
+        <div class="product_image">
+          <img src="{{key.pic}}" alt="" />
+        </div>
+         <div *ngIf="key.stock === 0" class="sale-box1"><span class="on_sale title_shop">Sold Out</span></div>  
+           <div class="price">
+            <div class="cart-left">
+              <p class="title">{{ key.name }}</p>
+              <div class="price1">
+                <span class="actual">Rp. {{ key.price }}</span>
+                <button class="btn btn-success" (click)="">Add to Cart</button>&nbsp;
+              </div>
+            </div>
+           <div class="clear"></div>
+		 </div>       
+        </div>
+<!--    </a> 
+
+	</div>
+</div>
+-->
+
+<app-hero-search></app-hero-search>
+<br/>
+<br/>
+
+<div class="section group" *ngFor="let key of keys">
+	 <div class="col_1_of_3 span_1_of_3" >
+	  <a  [routerLink]="['/detail', key.id]">
+		<div class="inner_content clearfix">
+			<div class="product_image">
+			  <img src="{{key.pic}}" alt="" />
+			</div>
+			<div *ngIf="key.stock === 0" class="sale-box1"><span class="on_sale title_shop">Sold Out</span></div>  
+			<div class="price">
+			  <p class="title">{{key.name}}</p>
+			  <div class="price1">
+			  <div *ngIf="key.stock < 10"><span class="reducedfrom">Rp.1,000,000</span></div>  
+			  
+				<span class="actual">Rp. {{key.price}}</span>
+			  </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	  </a>
+	</div>
+</div>
+
+
+

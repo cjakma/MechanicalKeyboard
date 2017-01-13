@@ -1,0 +1,175 @@
+<div class="mens" *ngIf="keys">
+	<div class="main">
+		<div class="wrap">
+			<ul class="breadcrumb breadcrumb__t"><a class="home" [routerLink]="['/dashboard']">Dashboard</a> / {{ keys.name }}</ul>
+			<div class="cont span_2_of_3">
+				<div class="grid images_3_of_2">
+							<ul id="etalage">
+								<li>
+									<a href="">
+										<img class="etalage_thumb_image" src="{{ keys.pic }}" class="img-responsive" />
+									</a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+				</div>
+				<div class="desc1 span_3_of_2">
+				  <h3 class="m_3">{{ keys.name }}</h3>
+				  <p class="m_5">Rp. {{ keys.price }}</p>
+				  <br/><br/>
+				  <p>{{ keys.description }}</p>
+				  <br/>
+				  <!--
+				  <div *ngIf="key.stock == 0">
+					<label>Masukkan email untuk notifikasi saat stock tersedia: </label>
+					<br/>
+					<input placeholder="Email">
+				  </div>
+				  -->
+				  <div>
+					<label>Jumlah Pesanan: </label>
+					<input placeholder="pesanan">
+				  </div>
+				<div>
+				  <button (click)="save()">Save</button>
+				  <button (click)="goBack()">Back</button>
+				  
+				</div>
+				</div>
+				<div class="clear"></div>	
+				
+				<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel();
+			$("#flexiselDemo2").flexisel({
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: false,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+
+
+<!--
+<div class="mens" *ngIf="keys">    
+  <div class="main">
+     <div class="wrap">
+     	<ul class="breadcrumb breadcrumb__t"><a class="home" [routerLink]="['/home']">Home</a> / {{ keys.name }}</ul>
+		<div class="cont span_2_of_3">
+		  	<div class="grid images_3_of_2">
+						<ul id="etalage">
+							<li>
+								<a href="">
+									<img class="etalage_thumb_image" src="{{ keys.pic }}" class="img-responsive" />
+								</a>
+							</li>
+						</ul>
+				<div class="clearfix"></div>
+	        </div>
+		         <div class="desc1 span_3_of_2">
+		         	<h3 class="m_3">{{ keys.name }}</h3>
+		             <p class="m_5">{{ keys.price }}</p>
+		         	 <div class="btn_form">
+						<button class="btn btn-success" (click)="">Add to Cart</button>&nbsp;
+					 </div>
+				     <p class="m_text2">{{keys.description}}</p>
+			     </div>
+			<div class="clear"></div>	
+	    
+	<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel();
+			$("#flexiselDemo2").flexisel({
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: false,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+     </div>
+     </div>
+     </div>
+     </div>
+
+ -->

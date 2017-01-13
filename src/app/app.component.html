@@ -1,0 +1,56 @@
+     <div class="header-top">
+	   <div class="wrap"> 
+			<div class="cssmenu">
+				<nav style="float: right;">
+					<a routerLink="/" routerLinkActive="active">Customer</a> ||
+					<a routerLink="/" routerLinkActive="active">Management</a>
+				</nav>
+			</div>
+			<div class="clear"></div>
+ 		</div>
+	</div>
+	<div class="header-bottom">
+	    <div class="wrap">
+			<div class="header-bottom-left">
+				<div class="logo">
+					<a [routerLink]="['/dashboard']"><img src="images/logo.png" alt="" width="225" height="100"/></a>
+				</div>
+			</div>
+	   <div class="header-bottom-right">
+         <div class="search">	  
+				<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+				<input type="submit" value="Subscribe" id="submit" name="submit">
+				<div id="response"> </div>
+		 </div>
+	  <div class="tag-list">
+	    <ul class="icon1 sub-icon1 profile_img">
+			<li><a class="active-icon c1" [routerLink]="['/konfirmasi-pembayaran']"> </a>
+				<ul class="sub-icon1 list">
+					<li><h3>Konfirmasi Pembayaran</h3><a href=""></a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="icon1 sub-icon1 profile_img">
+			<li><a class="active-icon c2" [routerLink]="['/shopping-cart']"> </a>
+				<ul class="sub-icon1 list">
+					<li><h3>Shopping Cart</h3><a href=""></a></li>
+				</ul>
+			</li>
+		</ul>
+	  </div>
+    </div>
+     <div class="clear"></div>
+     </div>
+	</div>
+
+	
+<!--
+<h1>{{ title }}</h1>
+<nav>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+</nav>
+-->
+<router-outlet></router-outlet>
+
+

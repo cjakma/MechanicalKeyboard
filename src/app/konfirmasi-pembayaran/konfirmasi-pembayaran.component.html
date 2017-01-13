@@ -1,0 +1,24 @@
+          <div class="register_account">
+          	<div class="wrap">
+    	      <h4 class="title">KONFIRMASI PEMBAYARAN</h4>
+    		   <form>
+    			 <div class="col_1_of_2 span_1_of_2">
+		   			<div><input type="text" value="ID_Pemesanan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ID Pemesanan';}"></div>
+					<div><input type="text" value="Nama_Penerima" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama Akun Penerima';}"></div>
+					<div><select id="rekening" name="rekening" onchange="change_country(this.value)" class="frm-field required">
+		            <option value="null">Rekening Pembayaran</option>         
+		            <option value="AX">BRI</option>
+		            <option value="AF">BNI</option>
+		         </select></div>		        
+		    		<div><input type="text" value="Tanggal_Transaksi" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Tanggal Transaksi';}"></div>
+		    	 </div>
+		    	  <div class="col_1_of_2 span_1_of_2">	
+		    		<div><input type="text" value="E-Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-Mail';}"></div>
+		          <div><input type="text" value="Nama_Pembayar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama Akun Pembayar';}"></div>
+		          	<div><input type="text" value="Total_pembeyaran" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Total Pembayaran';}"></div>
+		          </div>
+		      <button class="grey">KONFIRMASI PEMBAYARAN</button>		    
+		    <div class="clear"></div>
+		    </form>
+    	</div>
+    </div>

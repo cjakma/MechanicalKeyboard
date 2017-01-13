@@ -1,0 +1,32 @@
+          <div class="register_account">
+          	<div class="wrap">
+    	      <h4 class="title">ALAMAT TUJUAN PENGIRIMAN</h4>
+    		   <form>
+    			 <div class="col_1_of_2 span_1_of_2">
+		   			 <div><input type="text" value="Nama_depan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name Depan';}"></div>
+		    			<div><input type="text" value="Alamat" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Alamat';}"></div>
+						<div><select id="country" name="country" onchange="change_country(this.value)" class="frm-field required">
+						<option value="null">Provinsi</option>         
+						<option value="AX">Aceh</option>
+						<option value="AF">Jawa Barat</option>
+						</select></div>		        
+		    			<div><input type="text" value="Kode_POS" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Kode Pos';}"></div>
+		    	 </div>
+				 
+		    	  <div class="col_1_of_2 span_1_of_2">	
+		    		<div><input type="text" value="Nama_balakang" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama Belakang';}"></div>
+					 <div><input type="text" value="Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nomor Telpon';}"></div>
+		    		<div><select id="country" name="country" onchange="change_country(this.value)" class="frm-field required">
+		            <option value="null">Kota</option>         
+		            <option value="AX">Bandung</option>
+		            <option value="AF">Jakarta</option>
+		         </select></div>		        
+		           <div>
+		          </div>
+		          	
+		          </div>
+		      <a [routerLink]="['/cara-pembayaran']"><button class="grey">Lanjutkan pemesanan</button></a>
+		    <div class="clear"></div>
+		    </form>
+    	</div>
+    </div>
